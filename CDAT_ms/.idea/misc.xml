@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectRootManager">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="com.huawei.mind.studio.ssh.deploy.persistent.DeploySettingsState">
+    <option name="deployModels">
+      <list>
+        <DeployModel>
+          <option name="name" value="ascend-x86_64-linux (e0e7cf27-d375-453e-8a81-35b6f0a19a60)" />
+          <option name="relationToolChainsUuid" value="e0e7cf27-d375-453e-8a81-35b6f0a19a60" />
+          <option name="uuid" value="56313fef-0305-4487-a7d5-9edec2bfc131" />
+          <option name="deployConnectionModel" value="{&quot;deployConnectionType&quot;:&quot;SFTP&quot;,&quot;sshConnectionModel&quot;:{&quot;uuid&quot;:&quot;71f3475c-579c-4a1e-a10f-8806d6cbb5b9&quot;}}" />
+          <option name="deployMappingModels" value="[{&quot;deploymentPath&quot;:&quot;/home/wkz/tmp/56313fef-0305-4487-a7d5-9edec2bfc131&quot;,&quot;localPath&quot;:&quot;E:\\Black_Files\\pythonworkforwkz\\CDAT&quot;}]" />
+        </DeployModel>
+      </list>
+    </option>
+  </component>
+</project>

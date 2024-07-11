@@ -1,0 +1,11 @@
+imagecorruptions
+matplotlib
+# mindspore==2.2.11
+numpy
+opencv_python
+Pillow
+scikit_learn
+scipy
+setuptools
+torch==1.9.1
+torchvision

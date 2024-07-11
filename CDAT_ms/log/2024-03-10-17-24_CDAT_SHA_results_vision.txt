@@ -1,0 +1,111 @@
+num_gpu 	 1 
+local_rank 	 0 
+iter_each_train_epoch 	 0 
+seed 	 1234 
+time_ 	 2024-03-10-17-24 
+log_root_path 	 /home/neo/Documents/wkz/CDAT_x2ms/log/2024-03-10-17-24_CDAT_SHA_results_vision 
+log_txt_path 	 /home/neo/Documents/wkz/CDAT_x2ms/log/2024-03-10-17-24_CDAT_SHA_results_vision.txt 
+comment 	 SHA_results_vision 
+dataset 	 GCC_weak_strong_flip_just_weak_fix 
+gcc2sha_ratio 	 1.0 
+dataroot_GCC 	 /opt/data/common/GCC 
+dataroot_GCC_anno 	 /dataset/GCC_dataset/GCC 
+dataroot_SHA 	 ./data/SHA 
+weak_aug 	 ['pass'] 
+strong_aug 	 ['pass'] 
+blur_sigma 	 [0.1, 2.0] 
+contrast_severity 	 1 
+brightness_severity 	 1 
+tar_dataset 	 SHA_weak_strong_flip_just_weak 
+UCF50_val_choose 	 1 
+train_crop_size 	 [576, 768] 
+tar_scale_factor 	 [1.0] 
+tar_fix_scale_factor 	 1.0 
+WE_dilate_kernel 	 1 
+src_train_crop_size 	 [576, 768] 
+src_scale_factor 	 [1.0] 
+split_method 	 random 
+split_txt_path 	 /dataset/GCC_dataset/description_and_split 
+level_regularization 	 [0, 1, 2, 3, 4, 5, 6, 7, 8] 
+time_regularization 	 [0, 25] 
+weather_regularization 	 [0, 1, 2, 3, 4, 5, 6] 
+count_range 	 [0, 100000] 
+radio_range 	 [0.0, 100000.0] 
+level_capacity 	 [10.0, 25.0, 50.0, 100.0, 300.0, 600.0, 1000.0, 2000.0, 4000.0] 
+search_space 	 ['grey', 'scale', 'perspective_transform'] 
+scale_range_max 	 1.0 
+attributes_range 	 {'grey': [0.0, 1.0], 'scale': [0.5333333333333333, 1.0], 'perspective_transform': [0.0, 45.0]} 
+searched_domain 	 [0.785, 0.779, 0.272] 
+img_interpolate_mode 	 bilinear 
+mean_std 	 ([0.5, 0.5, 0.5], [1.0, 1.0, 1.0]) 
+gt_factor 	 100.0 
+sigma 	 4 
+kernel_size 	 15 
+num_workers 	 1 
+train_batch_size 	 4 
+test_batch_size 	 1 
+model 	 CDAT 
+model_resume_path 	  
+model_for_load 	  
+model_for_load_MT 	 ./code/pre_models/SHA_92.3.pth 
+model_scale_factor 	 8 
+model_interpolate_mode 	 bilinear 
+teacher_alpha 	 0.99 
+gradient_scalar 	 -1.0 
+domain_loss_trade_off 	 [1.0] 
+gradient_scalar_1 	 -1.0 
+dist_loss_trade_off 	 [1.0] 
+den_map_thd_factor 	 0.1 
+maxima_ksize 	 3 
+p_label_gass_loss_trade_off 	 [1.0] 
+p_label_loss_trade_off 	 [1.0] 
+concat_way 	 only_density_map 
+ada_mix_loss_choose 	 bce 
+mix_mode 	 soft 
+mix_grid 	 [8, 8] 
+mix_loss_trade_off 	 [1.0] 
+p_label_mix_loss_trade_off 	 [1.0] 
+mix_mask_dilate_kernel 	 1 
+cnt_thd 	 100 
+loss_choose 	 loss1 
+den_loss_trade_off 	 [1.0] 
+mask_den_choose 	  
+BF_grid 	 [8, 8] 
+BF_thd 	 [0.005, 10000] 
+BF_loss_choose 	 BCE 
+src_BF_cls_weight 	 [1.0] 
+tar_BF_cls_weight 	 [1.0] 
+src_local_density_loss_trade_off 	 [1.0] 
+tar_local_density_loss_trade_off 	 [1.0] 
+local_density_grid 	 [8, 8] 
+mask_den_loss_trade_off 	 [0.0] 
+save_start_epochs 	 3 
+vision_each_epoch 	 300 
+vision_frequency 	 30 
+frozen_layers 	 [] 
+secondary_layers 	 [] 
+main_lr_init 	 1e-05 
+main_weight_decay 	 0.0001 
+secondary_lr_init 	 1e-05 
+secondary_weight_decay 	 0.0001 
+optimizer 	 Adam 
+train_mode 	 step 
+num_epochs 	 100 
+decay_iter_freq 	 100 
+decay_gamma 	 0.95 
+epoch_stage 	 [0, 50, 100] 
+2024-03-10 17:24:33,577 - log_name - INFO - /home/neo/Documents/wkz/CDAT_x2ms/code/test.py
+2024-03-10 17:24:33,578 - log_name - INFO - ['./code/test.py', 'model=CDAT', 'comment=SHA_results_vision', 'dataset=GCC_weak_strong_flip_just_weak_fix', 'tar_dataset=SHA_weak_strong_flip_just_weak', 'src_scale_factor=[1.0]', 'tar_scale_factor=[1.0]', 'tar_fix_scale_factor=1.0', 'src_train_crop_size=[576,768]', 'train_crop_size=[576,768]', 'search_space=[grey,scale,perspective_transform]', 'searched_domain=[0.785,0.779,0.272]', 'model_for_load_MT=./code/pre_models/SHA_92.3.pth', 'dataroot_SHA=./data/SHA', 'vision_each_epoch=300', 'num_workers=1']
+2024-03-10 17:29:57,446 - log_name - INFO - Results in SHA_weak_strong_flip_just_weak
+2024-03-10 17:29:57,446 - log_name - INFO - mae: 92.269775
+2024-03-10 17:29:57,446 - log_name - INFO - mse: 137.64238
+2024-03-10 17:29:57,446 - log_name - INFO - 
+ _______ .__   __.  _______  
+|   ____||  \ |  | |       \ 
+|  |__   |   \|  | |  .--.  |
+|   __|  |  . `  | |  |  |  |
+|  |____ |  |\   | |  '--'  |
+|_______||__| \__| |_______/ 
+                            
+
+2024-03-10 17:29:57,446 - log_name - INFO - log location /home/neo/Documents/wkz/CDAT_x2ms/log/2024-03-10-17-24_CDAT_SHA_results_vision

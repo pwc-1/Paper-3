@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="pytorch-OpCounter-master">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/code/tools/pytorch-OpCounter-master.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
